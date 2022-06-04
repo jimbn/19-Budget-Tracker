@@ -1,3 +1,10 @@
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
+
 let db;
 
 //connetion to IndexedDB named 'budgetTracker'
@@ -11,6 +18,10 @@ request.onupgradeneeded = function (event) {
 
 request.onsuccess = function(event) {
     db = event.target.result;
+
+    if (navigator.onLine) {
+        checkDatabase();
+    }
 };
 
 request.onerror = function (event) {
