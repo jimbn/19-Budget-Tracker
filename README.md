@@ -33,7 +33,8 @@
   
   Below is a demo of the application being used . 
   
-  ![Budget Tracker]()
+  ![Budget Tracker](![Untitled_ Jun 3, 2022 7_58 PM](https://user-images.githubusercontent.com/95522881/171977236-d7cd8885-429c-4ca4-9db8-920a4f6627ee.gif)
+)
   
   
   [This is the live link to the deployed app to be used!](https://polar-sierra-31822.herokuapp.com/)
